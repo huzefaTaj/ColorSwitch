@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colours Game</title>
+    <link rel="stylesheet" href="Css/style.css">
+
+</head>
+
+<body>
+    <iframe src="resources/bg_music.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe>
+    <div class="d-flex flex-column justify-content-center w-100 h-100">
+        <div
+            style="display: inline; border: 2px solid black;  background-color: rgb(196, 194, 194); padding: 15px; margin-top: 20px; margin-bottom: 20px;">
+            <h2 style="display: inline;">Result:</h2>
+            <h2 style="display: inline; text-align: center;" id="ans"> Null </h2>&nbsp; &nbsp;
+
+            <h2 style="display: inline;">Score:</h2>
+            <h2 style="display: inline; text-align: center;" id="point"> 0 </h2>&nbsp; &nbsp;
+
+            <h2 style="display: inline;">Time left:</h2>
+            <h2 style="display: inline;" id="seconds">5</h2>
+        </div>
+        <br>
+        <br>
+        <div class="inline">
+
+            <div class="circle text1" id="text1" onclick='choosetxt1()'>
+                Text1
+            </div>
+
+            <div id="question" class="circle red"></div>
+
+
+            <div class="circle text2" id="text2" onclick='choosetxt2()'>
+                Text2
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+<script src="/JavaScript/script.js"></script>
+
+</html>
